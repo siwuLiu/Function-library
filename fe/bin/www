@@ -1,0 +1,9 @@
+#! /usr/bin node
+
+var app = require('../app');
+
+var config = require('../config/config');
+
+app.listen(config.port, function () {
+  console.log('server started, Listen port:' + config.port);
+});

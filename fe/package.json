@@ -1,0 +1,20 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "function library",
+  "main": "bin/www",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/siwuLiu/Function-library.git"
+  },
+  "author": "siwu liu",
+  "license": "ISC"
+}
