@@ -4,5 +4,39 @@
 <head>
 <body>
   <h1>This is Demo Html</h1>
+  
+  <div>
+    <button type="button" class="show-btn">显示弹窗</button>
+  </div>
+
+
+  <script src="/lib/jquery.js"></script>
+  <script src="/lib/dialog.js"></script>
+  <script type="text/javascript">
+
+    var TestObj = function () {
+      var $body = $('body');
+      var that = this;
+      $body.delegate('.show-btn', 'click', function(event) {
+        that.dg = new $dg({
+          content: '<h1>测试Demo</h1> <button type="" class="close-btn">关闭</button>',
+          settingsStyle: {
+            width: '500px',
+            height: '300px',
+            background: '#ff5a00',
+            color: '#fff',
+            textAlign: 'center'
+          }
+        }); 
+      });
+
+
+      $body.delegate('.close-btn', 'click', function () {
+        that.dg.close();
+      })
+    }
+
+    new TestObj();
+  </script>
 </body>
 </html>
